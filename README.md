@@ -3,13 +3,18 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 
+![github](https://user-images.githubusercontent.com/58588952/127536907-6dd237fc-d235-403f-b7a7-1a359326c440.jpg)
 
-![image](https://user-images.githubusercontent.com/58588952/127536375-4e802905-5222-46ce-a43c-35a495a4923a.png)
 
-First download the code from here;
 
-In the project directory, you can run:
-### `npm install`
+First download the zip file of the code and extract it.
+Then, in the project directory, you can run:
+
+### `npm install` 
+to install dependencies. In case of missing dependencies, run
+
+### `npm i react-router-dom`
+
 
 ## Available Scripts
 
