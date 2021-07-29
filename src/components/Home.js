@@ -2,8 +2,6 @@ import Card from './Card';
 import useFetch from './useFetch';
 
 function Home() {
-	// console.log(posts);
-
 	const { data: posts } = useFetch(
 		'https://jsonplaceholder.typicode.com/posts'
 	);

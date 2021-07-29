@@ -10,7 +10,6 @@ function Header() {
 					<div className="logo">
 						<img src={Logo} alt="Logo" />
 					</div>
-					{/* <a href="/">CSUP BLOG</a> */}
 
 					<Link to="/">CSUP BLOG</Link>
 				</div>
