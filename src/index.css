@@ -1,13 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	color: rgb(0, 0, 0);
+	background-color: #ebebeb;
+}
+* {
+	box-sizing: border-box;
+}
+header {
+	background-color: #fff;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 16px;
+	margin-bottom: 25px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-container {
+	display: flex;
+	/* background-color: aqua; */
+	width: 80%;
+	align-items: center;
+	padding: 0 25px;
+	justify-content: space-around;
+}
+.right-menu {
+	display: flex;
+	align-items: center;
+	flex: 1;
+}
+.header-container .right-menu .logo {
+	height: 35px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+.header-container .right-menu .logo img {
+	height: 100%;
+}
+.header-container .right-menu a {
+	font-weight: 700;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+.left-menu {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: 600;
+}
+.left-menu a {
+	margin-left: 15px;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+}
+.left-menu .button-container {
+	display: flex;
+	margin-left: 25px;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	background: #0364be;
+
+	cursor: pointer;
+	color: #ffffff !important;
+	transition: all 0.4s ease;
+}
+
+.left-menu .button-container:hover {
+	background: #23a0e9;
+}
+.posts-list {
+	/* background-color: #11121a; */
+	width: 80%;
+
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	padding: 0 25px;
+}
+.posts-list h1 {
+	margin-left: 25px;
+	font-size: 20px;
+}
+
+.posts-container {
+	display: grid;
+
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+.posts-tile {
+	background: #fff;
+	border-radius: 10px;
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	color: black;
+	justify-content: flex-start;
+	padding: 25px;
+	transition: transform 0.2s ease;
+}
+.posts-tile:hover {
+	transform: scale(1.05);
+}
+
+.top {
+	width: 100%;
+	display: flex;
+	height: auto;
+	justify-content: space-between;
+}
+
+.top img {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+}
+
+.title {
+	padding: 20px 0;
+}
+
+.title span {
+	font-size: 22px;
+}
+
+.writer {
+	height: auto;
+	overflow: hidden;
+	font-size: 15px;
+	color: #464646;
+}
+
+button {
+	border-radius: 10px;
+	background-color: #205fa7;
+	font-size: 14px;
+	border: none;
+	color: white;
+	padding: 10px;
+	font-weight: 500;
+	margin-top: 10px;
+	transition: transform 0.5s ease-in-out;
+	cursor: pointer;
+}
+button:hover {
+	background: #23a0e9;
+}
+
+.footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	color: black;
+	text-align: center;
+}
+.add-post {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 40px;
+}
+
+.add-post h2 {
+	display: flex;
+	justify-content: center;
+}
+form {
+	width: 40%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+form label {
+	display: flex;
+	flex-direction: column;
+	padding-left: 8px;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	font-size: 18px;
+}
+
+form input,
+form textarea {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid rgb(0, 84, 163);
+	height: 30px;
+	margin-bottom: 20px;
+	font-size: 15px;
+	background-color: #fff;
+}
+form textarea {
+	height: 80px;
+}
+form input:focus,
+form textarea:focus {
+	outline: none;
+}
+
+.content {
+	width: 60%;
+	margin: 0 auto;
+	background-color: #fff;
+	border-radius: 10px;
+	padding: 40px;
+}
+
+.content img {
+	display: flex;
+	margin: 0 auto;
+	width: 60%;
+	border-radius: 10px;
+}
+
+.header-text {
+	margin-top: 20px;
+
+	display: flex;
+	align-items: center;
+}
+.header-text h1 {
+	flex: 8;
+	font-size: 40px;
+}
+
+.btn-section {
+	display: flex;
+	flex: 1;
+	justify-content: space-between;
+}
+.btn-section button {
+	width: auto;
+}
+
+.delete {
+	background-color: #911111;
+	transition: transform 0.5s ease;
+}
+
+.delete:hover {
+	background-color: #b92828;
+}
+
+.content p {
+	color: #464646;
+	margin-top: -10px;
+}
+
+.text-content {
+	margin-top: 30px;
+	font-size: 20px;
 }
