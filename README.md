@@ -7,11 +7,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 
-First download the zip file of the code and extract it.
-Then, in the project directory, you can run:
+###First download the zip file of the code and extract it. In the project directory, you can run:
 
 ### `npm install` 
-to install dependencies. In case of missing dependencies, run
+
+### In case of missing dependencies, run
 
 ### `npm i react-router-dom`
 
