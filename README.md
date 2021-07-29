@@ -7,7 +7,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 
-###First download the zip file of the code and extract it. In the project directory, you can run:
+### First download the zip file of the code and extract it. In the project directory, you can run:
 
 ### `npm install` 
 
